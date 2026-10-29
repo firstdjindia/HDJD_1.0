@@ -45,6 +45,10 @@ jobs:
           java-version: "17"
 
       - uses: android-actions/setup-android@v3
+        with:
+          # The legacy "tools" package no longer exists in Google's SDK repository.
+          # Install current command-line tools and platform tools only.
+          packages: platform-tools
 
       - uses: gradle/actions/setup-gradle@v4
 

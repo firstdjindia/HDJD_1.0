@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pressed ripple + a clearly visible ring when focused with a TV remote / keyboard. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33000000">
+    <item>
+        <selector>
+            <item android:state_focused="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/hdjd_accent" />
+                    <stroke
+                        android:width="4dp"
+                        android:color="@color/hdjd_focus_ring" />
+                    <corners android:radius="28dp" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/hdjd_accent" />
+                    <corners android:radius="28dp" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

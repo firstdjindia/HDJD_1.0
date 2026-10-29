@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hdjd_background">
+
+    <!-- Content area; padded at runtime by system-bar / cutout / keyboard insets. -->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progress_height"
+            android:max="100"
+            android:progressTint="@color/hdjd_accent"
+            android:progressBackgroundTint="@android:color/transparent"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/error_view"
+            layout="@layout/view_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Full-screen branded splash. Sits above everything (not inset-padded) and doubles as the
+         loading screen if the website is slow. -->
+    <FrameLayout
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hdjd_background"
+        android:clickable="true"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/splash_logo"
+            android:layout_width="@dimen/splash_logo_size"
+            android:layout_height="@dimen/splash_logo_size"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hdjd_logo" />
+
+        <ProgressBar
+            android:id="@+id/splash_spinner"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="72dp"
+            android:alpha="0"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/hdjd_accent" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Launch theme: the AndroidX SplashScreen API shows this until the first frame. -->
+    <style name="Theme.HDJD.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/hdjd_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.HDJD</item>
+    </style>
+
+    <style name="Theme.HDJD" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/hdjd_background</item>
+        <item name="colorPrimary">@color/hdjd_background</item>
+        <item name="colorPrimaryDark">@color/hdjd_background</item>
+        <item name="colorAccent">@color/hdjd_accent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

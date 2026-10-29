@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Brand palette. Edit these three values to re-skin splash, bars, error screen and icons
+     (re-run tools/update_logo.sh afterwards so the legacy PNG icons pick up the background). -->
+<resources>
+    <color name="hdjd_background">#0B1220</color>
+    <color name="hdjd_accent">#D4AF37</color>
+    <color name="hdjd_on_background">#F2F4F8</color>
+    <color name="hdjd_muted">#9AA4B5</color>
+    <color name="hdjd_focus_ring">#FFFFFF</color>
+</resources>

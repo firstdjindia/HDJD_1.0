@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_logo_size">220dp</dimen>
+    <dimen name="error_content_width">320dp</dimen>
+    <dimen name="error_icon_size">72dp</dimen>
+    <dimen name="error_title_size">22sp</dimen>
+    <dimen name="error_body_size">15sp</dimen>
+    <dimen name="error_button_text_size">16sp</dimen>
+    <dimen name="error_button_height">52dp</dimen>
+    <dimen name="error_gap">16dp</dimen>
+    <dimen name="progress_height">3dp</dimen>
+</resources>

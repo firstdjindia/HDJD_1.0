@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">HDJD</string>
+    <string name="logo_description">HDJD logo</string>
+
+    <string name="retry">Try again</string>
+
+    <string name="error_network_title">Can’t reach HDJD</string>
+    <string name="error_network_message">Check your internet connection and try again. We’ll also retry automatically when you’re back online.</string>
+    <string name="error_server_title">Something went wrong on our side</string>
+    <string name="error_server_message">The website is temporarily unavailable. Please try again in a moment.</string>
+    <string name="error_ssl_title">Secure connection failed</string>
+    <string name="error_ssl_message">We couldn’t verify the website’s security certificate, so the page was not loaded. Check your device date and time, or try another network.</string>
+    <string name="error_icon_description">Connection problem</string>
+
+    <string name="renderer_gone">The page stopped unexpectedly. Reloading…</string>
+
+    <string name="whatsapp_choose_app">Share with</string>
+    <string name="whatsapp_not_installed">WhatsApp isn’t installed, so the message is opening in WhatsApp Web instead.</string>
+    <string name="maps_opening_in_browser">Google Maps isn’t installed. Opening directions in your browser.</string>
+    <string name="no_app_for_link">No app on this device can open that link.</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Television: sized for a ~3 m viewing distance. (sw600dp-television is used instead of plain
+     "television" because Android ranks the smallest-width qualifier above UI mode.) -->
+<resources>
+    <dimen name="splash_logo_size">420dp</dimen>
+    <dimen name="error_content_width">640dp</dimen>
+    <dimen name="error_icon_size">128dp</dimen>
+    <dimen name="error_title_size">38sp</dimen>
+    <dimen name="error_body_size">24sp</dimen>
+    <dimen name="error_button_text_size">24sp</dimen>
+    <dimen name="error_button_height">76dp</dimen>
+    <dimen name="error_gap">28dp</dimen>
+    <dimen name="progress_height">6dp</dimen>
+</resources>

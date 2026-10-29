@@ -66,7 +66,7 @@ jobs:
           fi
 
       - name: Validate (lint + unit tests) and build debug APK
-        run: ./gradlew --no-daemon --stacktrace lintDebug testDebugUnitTest assembleDebug
+        run: bash ./gradlew --no-daemon --stacktrace lintDebug testDebugUnitTest assembleDebug
 
       - name: Verify APK contents (package, permissions, launcher, TV)
         run: |
@@ -127,7 +127,7 @@ jobs:
         run: |
           echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/hdjd.jks"
           export HDJD_KEYSTORE_FILE="$RUNNER_TEMP/hdjd.jks"
-          ./gradlew --no-daemon assembleRelease
+          bash ./gradlew --no-daemon assembleRelease
           rm -f "$RUNNER_TEMP/hdjd.jks"
           APK=$(ls app/build/outputs/apk/release/*.apk | head -n1)
           AAPT2=$(ls "$ANDROID_HOME"/build-tools/*/aapt2 | sort -V | tail -n1)
